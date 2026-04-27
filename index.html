@@ -1,0 +1,894 @@
+<!doctype html>
+<html data-page="index.html" class="scroll-smooth" lang="en">
+  <head>
+    <link rel="stylesheet" href="assets/css/chrome.generated.css" />
+    <script defer="" src="assets/js/chrome.generated.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home | NorthByte Interactive</title>
+    <meta
+      name="description"
+      content="A PC game development studio creating immersive AAA and indie releases. Showcasing our expansive game catalog, rich studio history, and exclusive developer logs."
+    />
+    <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content="Home | NorthByte Interactive" />
+    <meta
+      property="og:description"
+      content="A PC game development studio creating immersive AAA and indie releases. Showcasing our expansive game catalog, rich studio history, and exclusive developer logs."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://northbyteinteractive.ca/" />
+    <meta property="og:image" content="assets/img/hero_game_scene.webp" />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <script defer="" src="assets/js/site.js"></script>
+    <meta name="twitter:image" content="assets/img/hero_game_scene.webp" />
+  </head>
+  <body
+    class="bg-slate-950 text-slate-300 font-sans antialiased selection:bg-indigo-500 selection:text-white"
+  >
+    <header class="site-header" data-chrome="header">
+      <div class="site-header__container">
+        <a class="site-brand" href="index.html">
+          <svg
+            class="brand-logo"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <g transform="rotate(-3 12 12)">
+              <rect
+                x="6"
+                y="6"
+                width="5.2"
+                height="5.2"
+                rx="1.5"
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-width="1.1"
+              />
+              <rect
+                x="13"
+                y="6"
+                width="5.2"
+                height="5.2"
+                rx="1.5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.1"
+              />
+              <rect
+                x="6"
+                y="13"
+                width="5.2"
+                height="5.2"
+                rx="1.5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.1"
+              />
+              <rect
+                x="13"
+                y="13"
+                width="5.2"
+                height="5.2"
+                rx="1.5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.1"
+              />
+              <path
+                d="M16 6 L19 9"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.1"
+                stroke-linecap="square"
+                stroke-linejoin="miter"
+              />
+            </g>
+          </svg>
+          <span class="site-brand__text">NorthByte Interactive</span>
+        </a>
+        <nav class="site-nav site-nav--desktop" aria-label="Primary">
+          <a
+            class="site-nav__link is-current"
+            href="index.html"
+            aria-current="page"
+            >Home</a
+          >
+          <a class="site-nav__link" href="who-we-are.html">Who We Are</a>
+          <a class="site-nav__link" href="titles.html">Titles</a>
+          <a class="site-nav__link" href="dev-log.html">Dev Log</a>
+        </nav>
+        <div class="site-header__actions">
+          <a
+            class="site-header__cta site-header__cta--secondary"
+            href="who-we-are.html"
+            >Contact Us</a
+          >
+          <button
+            class="site-burger"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-mobile-nav"
+            data-burger=""
+          >
+            <span class="site-burger__line"></span>
+            <span class="site-burger__line"></span>
+            <span class="site-burger__line"></span>
+            <span class="site-srOnly">Menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <nav
+      class="site-mobileNav"
+      id="site-mobile-nav"
+      data-mobile-nav=""
+      hidden=""
+      aria-label="Mobile navigation"
+    >
+      <div class="site-mobileNav__panel">
+        <div class="site-mobileNav__top">
+          <span class="site-mobileNav__brand">NorthByte</span>
+          <button
+            class="site-mobileNav__close"
+            type="button"
+            aria-label="Close menu"
+            data-mobile-close=""
+          >
+            ×
+          </button>
+        </div>
+        <div class="site-mobileNav__links">
+          <a
+            class="site-mobileNav__link is-current"
+            href="index.html"
+            aria-current="page"
+            >Home</a
+          >
+          <a class="site-mobileNav__link" href="who-we-are.html">Who We Are</a>
+          <a class="site-mobileNav__link" href="titles.html">Titles</a>
+          <a class="site-mobileNav__link" href="dev-log.html">Dev Log</a>
+        </div>
+        <div class="site-mobileNav__ctaBlock">
+          <a class="site-mobileNav__cta" href="who-we-are.html">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main-content">
+      <section
+        id="hero"
+        class="relative pt-24 pb-16 lg:pt-32 lg:pb-24 border-b border-slate-800"
+      >
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-8">
+            <div class="w-full lg:w-5/12 flex flex-col items-start gap-6">
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-sm border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 text-xs font-bold uppercase tracking-widest"
+              >
+                <span>New Release Out Now</span>
+              </div>
+              <h1
+                class="text-5xl lg:text-7xl font-bold text-slate-50 leading-tight tracking-tight"
+              >
+                Beyond <br /><span class="text-indigo-500">Reality.</span>
+              </h1>
+              <p class="text-lg text-slate-400 leading-relaxed max-w-md">
+                We architect digital worlds. From dark immersive role-playing
+                games to fast-paced indie hits, our code breathes life into the
+                unplayed.
+              </p>
+              <div
+                class="flex flex-col sm:flex-row items-center gap-4 mt-4 w-full"
+              >
+                <a
+                  href="titles.html"
+                  class="w-full sm:w-auto text-center px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-sm transition-colors duration-200 shadow-lg shadow-indigo-900/20"
+                >
+                  Explore Titles
+                </a>
+                <a
+                  href="who-we-are.html"
+                  class="w-full sm:w-auto text-center px-8 py-4 border border-slate-700 hover:border-slate-400 text-slate-200 font-semibold rounded-sm transition-colors duration-200"
+                >
+                  Our Studio
+                </a>
+              </div>
+            </div>
+            <div class="w-full lg:w-7/12 relative group">
+              <div
+                class="absolute inset-0 bg-indigo-500/20 blur-3xl rounded-full opacity-50 group-hover:opacity-70 transition duration-500"
+              ></div>
+              <img
+                src="assets/img/hero_game_scene.webp"
+                loading="lazy"
+                decoding="async"
+                alt="Immersive PC game environment"
+                class="relative w-full aspect-video lg:aspect-[4/3] object-cover rounded-sm border border-slate-800 shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="top-titles" class="py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <div class="mb-16 border-l-4 border-indigo-600 pl-6">
+            <h2 class="text-3xl lg:text-4xl font-bold text-slate-50">
+              Top Titles
+            </h2>
+            <p class="text-slate-400 mt-2">
+              The worlds players never want to leave.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <div
+              class="lg:col-span-8 group relative rounded-sm overflow-hidden border border-slate-800 bg-slate-900 aspect-video lg:aspect-auto lg:min-h-[500px] flex flex-col justify-end p-8"
+            >
+              <img
+                src="assets/img/game_cover_large.webp"
+                loading="lazy"
+                decoding="async"
+                alt="Featured game poster"
+                class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"
+              ></div>
+              <div class="relative z-10">
+                <span
+                  class="px-2 py-1 text-xs font-bold bg-slate-800 text-slate-300 rounded-sm mb-4 inline-block border border-slate-700"
+                  >Role-Playing Game</span
+                >
+                <h3 class="text-3xl font-bold text-slate-50 mb-2">
+                  Shadow of the Void
+                </h3>
+                <p class="text-slate-300 max-w-xl mb-6">
+                  A sprawling sci-fi epic where every decision fractures the
+                  timeline.
+                </p>
+                <a
+                  href="titles.html"
+                  class="inline-flex items-center gap-2 text-indigo-400 font-semibold hover:text-indigo-300 transition-colors"
+                >
+                  Discover Game
+                  <svg
+                    class="w-4 h-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="lg:col-span-4 flex flex-col gap-6">
+              <div
+                class="relative rounded-sm overflow-hidden border border-slate-800 bg-slate-900 group aspect-video flex flex-col justify-end p-6"
+              >
+                <img
+                  src="assets/img/game_cover_small_1.webp"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Secondary game poster"
+                  class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-500"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent"
+                ></div>
+                <div class="relative z-10">
+                  <h3 class="text-xl font-bold text-slate-50 mb-1">
+                    Neon Drift
+                  </h3>
+                  <p class="text-sm text-slate-400">
+                    High-speed cyberpunk racing.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="relative rounded-sm overflow-hidden border border-slate-800 bg-slate-900 group aspect-video flex flex-col justify-end p-6"
+              >
+                <img
+                  src="assets/img/game_cover_small_2.webp"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Tertiary game poster"
+                  class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-500"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent"
+                ></div>
+                <div class="relative z-10">
+                  <h3 class="text-xl font-bold text-slate-50 mb-1">
+                    Cursed Iron
+                  </h3>
+                  <p class="text-sm text-slate-400">
+                    Tactical medieval skirmishes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="studio-profile"
+        class="py-24 bg-slate-900 border-y border-slate-800"
+      >
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <div class="flex flex-col lg:flex-row gap-16 items-center">
+            <div class="lg:w-1/2">
+              <h2 class="text-3xl lg:text-4xl font-bold text-slate-50 mb-6">
+                Driven by Code.<br />Defined by Play.
+              </h2>
+              <p class="text-slate-400 mb-6 text-lg leading-relaxed">
+                NorthByte Interactive started with a singular focus: building
+                games that respect the player. No filler, no compromises. Just
+                raw, optimized experiences built by veterans of the interactive
+                entertainment industry.
+              </p>
+              <a
+                href="who-we-are.html"
+                class="inline-flex items-center gap-2 text-indigo-400 font-semibold hover:text-indigo-300 transition-colors"
+              >
+                Meet the Developers
+                <svg
+                  class="w-4 h-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="lg:w-1/2 w-full grid grid-cols-2 gap-4">
+              <div class="p-8 border border-slate-800 bg-slate-950 rounded-sm">
+                <div class="text-4xl font-bold text-indigo-500 mb-2">12+</div>
+                <div class="text-slate-300 font-semibold">
+                  Years Forging Worlds
+                </div>
+              </div>
+              <div class="p-8 border border-slate-800 bg-slate-950 rounded-sm">
+                <div class="text-4xl font-bold text-indigo-500 mb-2">8</div>
+                <div class="text-slate-300 font-semibold">
+                  Award-Winning Titles
+                </div>
+              </div>
+              <div class="p-8 border border-slate-800 bg-slate-950 rounded-sm">
+                <div class="text-4xl font-bold text-indigo-500 mb-2">50M</div>
+                <div class="text-slate-300 font-semibold">Global Players</div>
+              </div>
+              <div class="p-8 border border-slate-800 bg-slate-950 rounded-sm">
+                <div class="text-4xl font-bold text-indigo-500 mb-2">1</div>
+                <div class="text-slate-300 font-semibold">Custom Engine</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="upcoming" class="py-24 relative">
+        <div class="max-w-3xl mx-auto px-6 lg:px-8 text-center mb-16">
+          <h2 class="text-3xl lg:text-4xl font-bold text-slate-50">
+            On the Horizon
+          </h2>
+          <p class="text-slate-400 mt-4">
+            A glimpse into the pipeline. What we are building next.
+          </p>
+        </div>
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+          <div class="relative border-l border-slate-800 space-y-12 pb-8 ml-3">
+            <div class="relative pl-8">
+              <div
+                class="absolute w-3 h-3 bg-indigo-500 rounded-full -left-[6.5px] top-2 shadow-[0_0_10px_rgba(99,102,241,0.8)]"
+              ></div>
+              <h3 class="text-2xl font-bold text-slate-50">Project Echo</h3>
+              <p
+                class="text-sm font-semibold text-indigo-400 mt-1 mb-3 uppercase tracking-wider"
+              >
+                Alpha Stage
+              </p>
+              <p class="text-slate-400 leading-relaxed">
+                A cooperative survival shooter set against an unforgiving
+                hostile environment. Focuses heavily on resource management,
+                dynamic weather patterns, and tight squad tactics.
+              </p>
+            </div>
+            <div class="relative pl-8">
+              <div
+                class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[6.5px] top-2"
+              ></div>
+              <h3 class="text-2xl font-bold text-slate-50">Steel Horizon</h3>
+              <p
+                class="text-sm font-semibold text-slate-500 mt-1 mb-3 uppercase tracking-wider"
+              >
+                Pre-Production
+              </p>
+              <p class="text-slate-400 leading-relaxed">
+                Our return to the real-time strategy genre. Massive scale
+                planetary battles orchestrated from an immersive orbital command
+                deck interface.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="dev-log"
+        class="py-24 bg-slate-900 border-y border-slate-800"
+      >
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <div
+            class="flex flex-col lg:flex-row sm:justify-between items-start lg:items-end mb-12 border-b border-slate-800 pb-6 gap-6 sm:flex-row sm:items-end"
+          >
+            <div class="min-w-0">
+              <h2 class="text-3xl lg:text-4xl font-bold text-slate-50">
+                Developer Logs
+              </h2>
+              <p class="text-slate-400 mt-2">
+                Raw updates direct from the studio floor.
+              </p>
+            </div>
+            <a
+              href="dev-log.html"
+              class="px-6 py-3 border border-slate-700 hover:bg-slate-800 text-slate-200 font-semibold rounded-sm transition-colors whitespace-nowrap w-full sm:w-auto text-center shrink-0"
+            >
+              Read All Logs
+            </a>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <article class="group cursor-pointer">
+              <div
+                class="overflow-hidden rounded-sm border border-slate-800 mb-4 aspect-[16/9]"
+              >
+                <img
+                  src="assets/img/dev_log_engine.webp"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Engine code screenshot"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+              <div
+                class="flex items-center gap-3 text-xs text-slate-500 mb-2 font-mono uppercase tracking-wider"
+              >
+                <span>Engine Update</span>
+                <span>•</span>
+                <span>Build 4.12</span>
+              </div>
+              <h3
+                class="text-xl font-bold text-slate-50 group-hover:text-indigo-400 transition-colors mb-2"
+              >
+                Overhauling the Rendering Pipeline
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                A deep dive into how we squeezed an extra 30% performance out of
+                dynamic global illumination without sacrificing shadow quality.
+              </p>
+            </article>
+            <article class="group cursor-pointer">
+              <div
+                class="overflow-hidden rounded-sm border border-slate-800 mb-4 aspect-[16/9]"
+              >
+                <img
+                  src="assets/img/dev_log_art.webp"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Concept art showcase"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+              <div
+                class="flex items-center gap-3 text-xs text-slate-500 mb-2 font-mono uppercase tracking-wider"
+              >
+                <span>Art Direction</span>
+                <span>•</span>
+                <span>Project Echo</span>
+              </div>
+              <h3
+                class="text-xl font-bold text-slate-50 group-hover:text-indigo-400 transition-colors mb-2"
+              >
+                Designing Hostile Architecture
+              </h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Visualizing environments that feel inherently dangerous to the
+                player before a single enemy spawns.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="py-24">
+        <div
+          class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row gap-16"
+        >
+          <div class="lg:w-1/3">
+            <div class="sticky top-12">
+              <h2 class="text-3xl lg:text-4xl font-bold text-slate-50 mb-4">
+                Player Queries
+              </h2>
+              <p class="text-slate-400 mb-6">
+                Common questions regarding our titles, modding support, and
+                platform availability.
+              </p>
+            </div>
+          </div>
+          <div class="lg:w-2/3 space-y-4">
+            <details
+              class="group border border-slate-800 bg-slate-900 rounded-sm open:bg-slate-800 transition-colors"
+            >
+              <summary
+                class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-slate-200 group-open:text-indigo-400"
+              >
+                <span>Do your titles support community modding?</span>
+                <span class="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </summary>
+              <div class="text-slate-400 px-6 pb-6 leading-relaxed">
+                Absolutely. We believe games live longer and thrive when the
+                community is empowered to build upon them. Official modding
+                toolkits are released post-launch for our major single-player
+                releases.
+              </div>
+            </details>
+            <details
+              class="group border border-slate-800 bg-slate-900 rounded-sm open:bg-slate-800 transition-colors"
+            >
+              <summary
+                class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-slate-200 group-open:text-indigo-400"
+              >
+                <span
+                  >Are you planning to port your PC exclusives to
+                  consoles?</span
+                >
+                <span class="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </summary>
+              <div class="text-slate-400 px-6 pb-6 leading-relaxed">
+                We develop our games with a PC-first mentality to push graphical
+                and processing limits. However, our most successful and highly
+                requested titles often see console iterations developed with
+                trusted external partner studios.
+              </div>
+            </details>
+            <details
+              class="group border border-slate-800 bg-slate-900 rounded-sm open:bg-slate-800 transition-colors"
+            >
+              <summary
+                class="flex justify-between items-center font-medium cursor-pointer list-none p-6 text-slate-200 group-open:text-indigo-400"
+              >
+                <span>How frequently are Developer Logs updated?</span>
+                <span class="transition group-open:rotate-180">
+                  <svg
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </span>
+              </summary>
+              <div class="text-slate-400 px-6 pb-6 leading-relaxed">
+                We aim for monthly deep dives into specific technical or
+                artistic challenges, along with smaller weekly patch notes for
+                our actively updated multiplayer environments.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="py-24 border-t border-slate-800 bg-slate-950"
+      >
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div>
+              <h2 class="text-3xl lg:text-4xl font-bold text-slate-50 mb-6">
+                Commence Transmission
+              </h2>
+              <p class="text-slate-400 mb-10 max-w-md">
+                Have a press inquiry, bug report, or business proposal? Reach
+                out directly. Our communications array is always listening.
+              </p>
+
+              <div class="space-y-6">
+                <a
+                  href="mailto:info@northbyteinteractive.ca"
+                  class="flex items-start gap-4 group"
+                >
+                  <div
+                    class="p-3 bg-slate-900 border border-slate-800 rounded-sm group-hover:bg-indigo-900/30 group-hover:border-indigo-500/30 transition-colors"
+                  >
+                    <svg
+                      class="w-6 h-6 text-indigo-400"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="text-slate-50 font-semibold mb-1">
+                      info@northbyteinteractive.ca
+                    </h4>
+                    <p
+                      class="text-slate-400 group-hover:text-indigo-300 transition-colors"
+                    ></p>
+                  </div>
+                </a>
+                <a href="tel:+16045550404" class="flex items-start gap-4 group">
+                  <div
+                    class="p-3 bg-slate-900 border border-slate-800 rounded-sm group-hover:bg-indigo-900/30 group-hover:border-indigo-500/30 transition-colors"
+                  >
+                    <svg
+                      class="w-6 h-6 text-indigo-400"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="text-slate-50 font-semibold mb-1">
+                      +1 604 555 0404
+                    </h4>
+                    <p
+                      class="text-slate-400 group-hover:text-indigo-300 transition-colors"
+                    ></p>
+                  </div>
+                </a>
+                <a
+                  href="https://maps.app.goo.gl/xXYFh8uVacPfMRAQ6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-start gap-4 group"
+                >
+                  <div
+                    class="p-3 bg-slate-900 border border-slate-800 rounded-sm group-hover:bg-indigo-900/30 group-hover:border-indigo-500/30 transition-colors"
+                  >
+                    <svg
+                      class="w-6 h-6 text-indigo-400"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 21s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 7.2c0 7.3-8 11.8-8 11.8z"
+                      ></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="text-slate-50 font-semibold mb-1">
+                      1075 West Georgia Street, Vancouver, BC V6E 3C9, Canada
+                    </h4>
+                    <p
+                      class="text-slate-400 group-hover:text-indigo-300 transition-colors"
+                    ></p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="bg-slate-900 border border-slate-800 p-8 rounded-sm shadow-xl"
+            >
+              <form action="thanks_form.php" method="post" class="space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div class="space-y-2">
+                    <label
+                      for="firstName"
+                      class="text-sm font-medium text-slate-300"
+                      >First Name</label
+                    >
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      required=""
+                      class="w-full bg-slate-950 border border-slate-800 rounded-sm px-4 py-3 text-slate-200 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors"
+                    />
+                  </div>
+                  <div class="space-y-2">
+                    <label
+                      for="lastName"
+                      class="text-sm font-medium text-slate-300"
+                      >Last Name</label
+                    >
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      required=""
+                      class="w-full bg-slate-950 border border-slate-800 rounded-sm px-4 py-3 text-slate-200 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors"
+                    />
+                  </div>
+                </div>
+                <div class="space-y-2">
+                  <label for="email" class="text-sm font-medium text-slate-300"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required=""
+                    class="w-full bg-slate-950 border border-slate-800 rounded-sm px-4 py-3 text-slate-200 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors"
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label for="topic" class="text-sm font-medium text-slate-300"
+                    >Topic</label
+                  >
+                  <select
+                    id="topic"
+                    name="topic"
+                    required=""
+                    class="w-full bg-slate-950 border border-slate-800 rounded-sm px-4 py-3 text-slate-200 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors appearance-none"
+                  >
+                    <option value="" disabled="" selected="">
+                      Select an inquiry type...
+                    </option>
+                    <option value="press">Press &amp; Media</option>
+                    <option value="support">Game Support</option>
+                    <option value="business">Business Development</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="space-y-2">
+                  <label
+                    for="message"
+                    class="text-sm font-medium text-slate-300"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required=""
+                    class="w-full bg-slate-950 border border-slate-800 rounded-sm px-4 py-3 text-slate-200 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors resize-y"
+                  ></textarea>
+                </div>
+                <div class="form-privacy">
+                  <label class="privacy-label">
+                    <input type="checkbox" name="privacyAccepted" required="" />
+                    <span
+                      >I agree to the
+                      <a
+                        href="privacy-policy.html"
+                        target="_blank"
+                        rel="noopener"
+                        >Privacy Policy</a
+                      >.</span
+                    >
+                  </label>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-4 rounded-sm transition-colors duration-200 shadow-lg shadow-indigo-900/20"
+                >
+                  Send Transmission
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-chrome="footer" aria-label="Site Footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__brandCol">
+          <strong class="site-footer__brand">NorthByte Interactive</strong>
+          <p class="site-footer__summary">Crafting digital worlds.</p>
+        </div>
+        <div class="site-footer__contactCol">
+          <span class="site-footer__heading">Connect</span>
+          <div class="site-footer__contact">
+            <a class="site-footer__contactLink" href="tel:+16045550404"
+              >+1 604 555 0404</a
+            >
+            <a
+              class="site-footer__contactLink"
+              href="mailto:info@northbyteinteractive.ca"
+              >info@northbyteinteractive.ca</a
+            >
+            <a
+              class="site-footer__contactLink"
+              href="https://maps.app.goo.gl/xXYFh8uVacPfMRAQ6"
+              target="_blank"
+              rel="noopener"
+              >1075 West Georgia Street</a
+            >
+          </div>
+        </div>
+        <div class="site-footer__navCol">
+          <span class="site-footer__heading">Explore</span>
+          <div class="site-footer__links">
+            <a class="site-footer__link" href="index.html">Home</a>
+            <a class="site-footer__link" href="who-we-are.html">Who We Are</a>
+            <a class="site-footer__link" href="titles.html">Titles</a>
+            <a class="site-footer__link" href="dev-log.html">Dev Log</a>
+          </div>
+        </div>
+        <div class="site-footer__legalCol">
+          <span class="site-footer__heading">Legal</span>
+          <div class="site-footer__links">
+            <a class="site-footer__link" href="privacy-policy.html"
+              >Privacy Policy</a
+            >
+            <a class="site-footer__link" href="terms-conditions.html"
+              >Terms &amp; Conditions</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span class="site-footer__copy">© 2026 NorthByte Interactive</span>
+      </div>
+    </footer>
+  </body>
+</html>

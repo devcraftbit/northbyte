@@ -1,0 +1,870 @@
+<!doctype html>
+<html data-page="dev-log.html" lang="en">
+  <head>
+    <link rel="stylesheet" href="assets/css/chrome.generated.css" />
+    <script defer="" src="assets/js/chrome.generated.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dev Log | NorthByte Interactive</title>
+    <meta
+      name="description"
+      content="Follow the development journey of our upcoming PC games. Studio developer logs, release notes, and behind the scenes content."
+    />
+    <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content="Dev Log | NorthByte Interactive" />
+    <meta
+      property="og:description"
+      content="Follow the development journey of our upcoming PC games. Studio developer logs, release notes, and behind the scenes content."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://northbyteinteractive.ca/dev-log.html"
+    />
+    <meta property="og:image" content="assets/img/devlog_hero_main.webp" />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <script defer="" src="assets/js/site.js"></script>
+    <meta name="twitter:image" content="assets/img/devlog_hero_main.webp" />
+  </head>
+  <body
+    class="bg-slate-950 text-slate-300 font-sans antialiased selection:bg-violet-500 selection:text-white"
+  >
+    <header class="site-header" data-chrome="header">
+      <div class="site-header__container">
+        <a class="site-brand" href="index.html">
+          <svg
+            class="brand-logo"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <g transform="rotate(-3 12 12)">
+              <rect
+                x="6"
+                y="6"
+                width="5.2"
+                height="5.2"
+                rx="1.5"
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-width="1.1"
+              />
+              <rect
+                x="13"
+                y="6"
+                width="5.2"
+                height="5.2"
+                rx="1.5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.1"
+              />
+              <rect
+                x="6"
+                y="13"
+                width="5.2"
+                height="5.2"
+                rx="1.5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.1"
+              />
+              <rect
+                x="13"
+                y="13"
+                width="5.2"
+                height="5.2"
+                rx="1.5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.1"
+              />
+              <path
+                d="M16 6 L19 9"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.1"
+                stroke-linecap="square"
+                stroke-linejoin="miter"
+              />
+            </g>
+          </svg>
+          <span class="site-brand__text">NorthByte Interactive</span>
+        </a>
+        <nav class="site-nav site-nav--desktop" aria-label="Primary">
+          <a class="site-nav__link" href="index.html">Home</a>
+          <a class="site-nav__link" href="who-we-are.html">Who We Are</a>
+          <a class="site-nav__link" href="titles.html">Titles</a>
+          <a
+            class="site-nav__link is-current"
+            href="dev-log.html"
+            aria-current="page"
+            >Dev Log</a
+          >
+        </nav>
+        <div class="site-header__actions">
+          <a
+            class="site-header__cta site-header__cta--secondary"
+            href="who-we-are.html"
+            >Contact Us</a
+          >
+          <button
+            class="site-burger"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-mobile-nav"
+            data-burger=""
+          >
+            <span class="site-burger__line"></span>
+            <span class="site-burger__line"></span>
+            <span class="site-burger__line"></span>
+            <span class="site-srOnly">Menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <nav
+      class="site-mobileNav"
+      id="site-mobile-nav"
+      data-mobile-nav=""
+      hidden=""
+      aria-label="Mobile navigation"
+    >
+      <div class="site-mobileNav__panel">
+        <div class="site-mobileNav__top">
+          <span class="site-mobileNav__brand">NorthByte</span>
+          <button
+            class="site-mobileNav__close"
+            type="button"
+            aria-label="Close menu"
+            data-mobile-close=""
+          >
+            ×
+          </button>
+        </div>
+        <div class="site-mobileNav__links">
+          <a class="site-mobileNav__link" href="index.html">Home</a>
+          <a class="site-mobileNav__link" href="who-we-are.html">Who We Are</a>
+          <a class="site-mobileNav__link" href="titles.html">Titles</a>
+          <a
+            class="site-mobileNav__link is-current"
+            href="dev-log.html"
+            aria-current="page"
+            >Dev Log</a
+          >
+        </div>
+        <div class="site-mobileNav__ctaBlock">
+          <a class="site-mobileNav__cta" href="who-we-are.html">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- section#hero -->
+      <section
+        id="hero"
+        class="bg-slate-950 py-12 lg:py-24 border-b border-slate-800"
+      >
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <div class="lg:col-span-5 lg:pr-12 space-y-6">
+              <span
+                class="inline-block px-3 py-1 bg-violet-900/40 border border-violet-800 text-violet-300 text-xs font-bold uppercase tracking-widest rounded-sm"
+              >
+                Studio Diary
+              </span>
+              <h1
+                class="text-4xl lg:text-6xl font-semibold text-slate-50 tracking-tight leading-tight"
+              >
+                System Core Online.
+              </h1>
+              <p class="text-lg text-slate-400 max-w-md">
+                Direct access to our development notes. Explore the technical
+                hurdles, design choices, and creative victories behind our
+                upcoming titles.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                <a
+                  href="#dev-log"
+                  class="inline-flex justify-center items-center px-6 py-3 bg-violet-600 text-white font-medium rounded-sm hover:bg-violet-500 transition-colors"
+                >
+                  Read Latest Logs
+                </a>
+                <a
+                  href="#release-notes"
+                  class="inline-flex justify-center items-center px-6 py-3 bg-slate-900 border border-slate-800 text-slate-300 font-medium rounded-sm hover:bg-slate-800 transition-colors"
+                >
+                  View Patch Notes
+                </a>
+              </div>
+            </div>
+            <div class="lg:col-span-7 relative h-80 lg:h-[32rem]">
+              <img
+                src="assets/img/devlog_hero_main.webp"
+                loading="lazy"
+                decoding="async"
+                alt="Game development environment overview"
+                class="w-full h-full object-cover rounded-sm border border-slate-800 shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section#dev-log -->
+      <section
+        id="dev-log"
+        class="bg-slate-900 py-16 lg:py-32 border-b border-slate-800"
+      >
+        <div class="max-w-7xl mx-auto px-6">
+          <div
+            class="mb-16 border border-slate-800 p-6 inline-block bg-slate-950 rounded-sm"
+          >
+            <h2 class="text-3xl font-semibold text-slate-50 tracking-tight">
+              Recent Logs
+            </h2>
+            <p class="text-sm text-slate-400 mt-2">
+              The latest transmissions from our engineering team.
+            </p>
+          </div>
+
+          <!-- Magazine asymmetric grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <!-- Dominant Feature (col-span-8) -->
+            <article
+              class="lg:col-span-8 bg-slate-950 border border-slate-800 rounded-sm overflow-hidden flex flex-col group"
+            >
+              <div
+                class="h-64 lg:h-96 w-full relative overflow-hidden border-b border-slate-800"
+              >
+                <img
+                  src="assets/img/devlog_engine_update.webp"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Game engine rendering debug view"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+              <div class="p-8 flex-1 flex flex-col justify-center">
+                <div class="flex items-center gap-3 mb-4">
+                  <span
+                    class="text-violet-400 text-xs font-bold uppercase tracking-widest"
+                    >Engineering</span
+                  >
+                  <span class="text-slate-500 text-xs font-mono">LOG 042</span>
+                </div>
+                <h3
+                  class="text-2xl lg:text-3xl font-semibold text-slate-50 mb-4"
+                >
+                  Overhauling the Volumetric Render Pipeline
+                </h3>
+                <p class="text-slate-400 mb-6 max-w-2xl">
+                  We dismantled our legacy lighting models to introduce
+                  real-time volumetric fog that reacts organically to particle
+                  physics. The initial performance hit was severe, but deploying
+                  aggressive culling algorithms brought us back to our target
+                  frame rates without sacrificing visual fidelity.
+                </p>
+                <div class="mt-auto">
+                 
+                </div>
+              </div>
+            </article>
+
+            <!-- Stack of two smaller logs (col-span-4) -->
+            <div class="lg:col-span-4 flex flex-col gap-6">
+              <article
+                class="flex-1 bg-slate-950 border border-slate-800 rounded-sm p-6 flex flex-col group"
+              >
+                <div
+                  class="h-32 w-full mb-4 overflow-hidden rounded-sm border border-slate-800"
+                >
+                  <img
+                    src="assets/img/devlog_level_design.webp"
+                    loading="lazy"
+                    decoding="async"
+                    alt="Level design blocked out in engine"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div class="flex items-center gap-3 mb-3">
+                  <span
+                    class="text-violet-400 text-xs font-bold uppercase tracking-widest"
+                    >Design</span
+                  >
+                  <span class="text-slate-500 text-xs font-mono">LOG 041</span>
+                </div>
+                <h3 class="text-xl font-semibold text-slate-50 mb-3">
+                  Verticality in Architecture
+                </h3>
+                <p class="text-slate-400 text-sm mb-4">
+                  Moving away from flat arena designs required a massive rethink
+                  of traversal mechanics. Here is how we implemented the new
+                  grip system.
+                </p>
+                <div class="mt-auto">
+                  
+                </div>
+              </article>
+
+              <article
+                class="flex-1 bg-slate-950 border border-slate-800 rounded-sm p-6 flex flex-col group"
+              >
+                <div
+                  class="h-32 w-full mb-4 overflow-hidden rounded-sm border border-slate-800"
+                >
+                  <img
+                    src="assets/img/devlog_audio_design.webp"
+                    loading="lazy"
+                    decoding="async"
+                    alt="Audio waveforms and mixing interface"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                </div>
+                <div class="flex items-center gap-3 mb-3">
+                  <span
+                    class="text-violet-400 text-xs font-bold uppercase tracking-widest"
+                    >Audio</span
+                  >
+                  <span class="text-slate-500 text-xs font-mono">LOG 040</span>
+                </div>
+                <h3 class="text-xl font-semibold text-slate-50 mb-3">
+                  Dynamic Soundscapes
+                </h3>
+                <p class="text-slate-400 text-sm mb-4">
+                  Procedural audio generation for weather states. Rain no longer
+                  loops; it calculates drop collision surfaces in real-time.
+                </p>
+                <div class="mt-auto">
+                 
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section#release-notes -->
+      <section
+        id="release-notes"
+        class="bg-slate-950 py-16 lg:py-32 border-b border-slate-800"
+      >
+        <div class="max-w-4xl mx-auto px-6">
+          <div class="mb-16 max-w-xl">
+            <span
+              class="text-violet-400 text-xs font-bold uppercase tracking-widest block mb-2"
+              >Changelog</span
+            >
+            <h2
+              class="text-3xl lg:text-4xl font-semibold text-slate-50 tracking-tight mb-4"
+            >
+              Release Notes
+            </h2>
+            <p class="text-slate-400">
+              Track the evolution of our early-access builds. Every hotfix,
+              balance change, and major system deployment is documented right
+              here.
+            </p>
+          </div>
+
+          <!-- Timeline rhythm -->
+          <div
+            class="border-l-2 border-slate-800 ml-3 lg:ml-6 pl-8 lg:pl-12 py-4 space-y-16 relative"
+          >
+            <!-- Note 1 -->
+            <div class="relative">
+              <div
+                class="absolute -left-[2.85rem] lg:-left-[3.85rem] top-1.5 w-6 h-6 bg-slate-950 border-2 border-violet-500 rounded-full"
+              ></div>
+              <div
+                class="flex flex-col sm:flex-row sm:items-baseline gap-2 mb-4"
+              >
+                <h3 class="text-2xl font-semibold text-slate-50">
+                  Build v0.9.4
+                </h3>
+                <span
+                  class="text-violet-400 text-sm font-medium border border-violet-900/50 bg-violet-900/20 px-2 py-0.5 rounded-sm"
+                  >Latest</span
+                >
+              </div>
+              <div class="bg-slate-900 border border-slate-800 p-6 rounded-sm">
+                <h4 class="text-slate-50 font-medium mb-3">
+                  Core Systems &amp; AI
+                </h4>
+                <ul
+                  class="space-y-2 text-slate-400 text-sm list-disc list-inside"
+                >
+                  <li>
+                    Enemy pathfinding rewritten to utilize node-based dynamic
+                    cover logic.
+                  </li>
+                  <li>
+                    Fixed memory leak occurring during heavy physics explosions.
+                  </li>
+                  <li>
+                    Optimized texture streaming for high-density metropolitan
+                    areas.
+                  </li>
+                </ul>
+                <h4 class="text-slate-50 font-medium mt-6 mb-3">
+                  Balance Changes
+                </h4>
+                <ul
+                  class="space-y-2 text-slate-400 text-sm list-disc list-inside"
+                >
+                  <li>Reduced heavy weapon stamina drain by 15%.</li>
+                  <li>
+                    Increased stealth detection threshold during night cycles.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Note 2 -->
+            <div class="relative">
+              <div
+                class="absolute -left-[2.85rem] lg:-left-[3.85rem] top-1.5 w-6 h-6 bg-slate-950 border-2 border-slate-700 rounded-full"
+              ></div>
+              <div
+                class="flex flex-col sm:flex-row sm:items-baseline gap-2 mb-4"
+              >
+                <h3 class="text-2xl font-semibold text-slate-300">
+                  Build v0.9.2
+                </h3>
+              </div>
+              <div class="bg-slate-900 border border-slate-800 p-6 rounded-sm">
+                <h4 class="text-slate-50 font-medium mb-3">
+                  Hotfix Deployment
+                </h4>
+                <ul
+                  class="space-y-2 text-slate-400 text-sm list-disc list-inside"
+                >
+                  <li>
+                    Resolved critical crash linked to corrupted save state
+                    metadata.
+                  </li>
+                  <li>
+                    UI scaling issue on ultrawide monitors has been successfully
+                    corrected.
+                  </li>
+                  <li>Network replication bugs for co-op sessions patched.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Note 3 -->
+            <div class="relative">
+              <div
+                class="absolute -left-[2.85rem] lg:-left-[3.85rem] top-1.5 w-6 h-6 bg-slate-950 border-2 border-slate-700 rounded-full"
+              ></div>
+              <div
+                class="flex flex-col sm:flex-row sm:items-baseline gap-2 mb-4"
+              >
+                <h3 class="text-2xl font-semibold text-slate-300">
+                  Build v0.9.0
+                </h3>
+              </div>
+              <div class="bg-slate-900 border border-slate-800 p-6 rounded-sm">
+                <h4 class="text-slate-50 font-medium mb-3">
+                  The "First Look" Update
+                </h4>
+                <ul
+                  class="space-y-2 text-slate-400 text-sm list-disc list-inside"
+                >
+                  <li>Introduced the initial three playable sectors.</li>
+                  <li>
+                    Base movement mechanics, including sprint and vault logic,
+                    implemented.
+                  </li>
+                  <li>Basic inventory logic deployed for weapon swapping.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section#behind-the-scenes -->
+      <section
+        id="behind-the-scenes"
+        class="bg-slate-900 py-16 lg:py-32 border-b border-slate-800"
+      >
+        <div class="max-w-7xl mx-auto px-6 space-y-16 lg:space-y-24">
+          <div
+            class="border border-slate-800 p-6 inline-block bg-slate-950 rounded-sm"
+          >
+            <h2 class="text-3xl font-semibold text-slate-50 tracking-tight">
+              Behind the Scenes
+            </h2>
+            <p class="text-sm text-slate-400 mt-2">
+              The craft and tools behind our immersive worlds.
+            </p>
+          </div>
+
+          <!-- Split Section 1 -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div
+              class="h-80 lg:h-96 w-full border border-slate-800 rounded-sm overflow-hidden"
+            >
+              <img
+                src="assets/img/bts_mocap.webp"
+                loading="lazy"
+                decoding="async"
+                alt="Motion capture recording session in studio"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="space-y-6">
+              <h3 class="text-2xl font-semibold text-slate-50">
+                Capturing Realistic Movement
+              </h3>
+              <p class="text-slate-400">
+                Our in-house motion capture facility allows us to prototype
+                character animations rapidly. We utilize a 32-camera array to
+                track full-body physics, capturing subtle weight shifts and
+                momentum transfers.
+              </p>
+              <p class="text-slate-400">
+                This raw data is immediately piped into our custom engine tools,
+                allowing animators to clean up and blend states within hours
+                instead of days.
+              </p>
+            </div>
+          </div>
+
+          <!-- Stat Band -->
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+              class="bg-slate-950 border border-slate-800 p-6 rounded-sm text-center"
+            >
+              <span class="block text-3xl font-semibold text-violet-400 mb-2"
+                >12M+</span
+              >
+              <span
+                class="text-xs text-slate-500 uppercase tracking-widest font-bold"
+                >Polygons Rendered</span
+              >
+            </div>
+            <div
+              class="bg-slate-950 border border-slate-800 p-6 rounded-sm text-center"
+            >
+              <span class="block text-3xl font-semibold text-violet-400 mb-2"
+                >4,200</span
+              >
+              <span
+                class="text-xs text-slate-500 uppercase tracking-widest font-bold"
+                >Bugs Squashed</span
+              >
+            </div>
+            <div
+              class="bg-slate-950 border border-slate-800 p-6 rounded-sm text-center"
+            >
+              <span class="block text-3xl font-semibold text-violet-400 mb-2"
+                >600k</span
+              >
+              <span
+                class="text-xs text-slate-500 uppercase tracking-widest font-bold"
+                >Lines of Code</span
+              >
+            </div>
+            <div
+              class="bg-slate-950 border border-slate-800 p-6 rounded-sm text-center"
+            >
+              <span class="block text-3xl font-semibold text-violet-400 mb-2"
+                >Infinite</span
+              >
+              <span
+                class="text-xs text-slate-500 uppercase tracking-widest font-bold"
+                >Coffee Consumed</span
+              >
+            </div>
+          </div>
+
+          <!-- Split Section 2 (reversed) -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-1 space-y-6">
+              <h3 class="text-2xl font-semibold text-slate-50">
+                Foley and Sound Engineering
+              </h3>
+              <p class="text-slate-400">
+                Audio is half the experience. We record thousands of practical
+                sound effects using unconventional objects to build out our
+                sci-fi weapon library and environmental impacts.
+              </p>
+              <p class="text-slate-400">
+                Every footstep is dynamically layered based on character weight,
+                armor class, and terrain material, creating an unparalleled
+                sense of physical presence.
+              </p>
+            </div>
+            <div
+              class="order-1 lg:order-2 h-80 lg:h-96 w-full border border-slate-800 rounded-sm overflow-hidden"
+            >
+              <img
+                src="assets/img/bts_audio.webp"
+                loading="lazy"
+                decoding="async"
+                alt="Audio recording studio mixing desk"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- section#contact -->
+      <section
+        id="contact"
+        class="bg-slate-950 py-16 lg:py-32 border-b border-slate-800"
+      >
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
+            <!-- Contact Info & Pitch -->
+            <div class="space-y-8">
+              <div>
+                <span
+                  class="text-violet-400 text-xs font-bold uppercase tracking-widest block mb-2"
+                  >Connect</span
+                >
+                <h2
+                  class="text-3xl lg:text-4xl font-semibold text-slate-50 tracking-tight mb-4"
+                >
+                  Join the Network
+                </h2>
+                <p class="text-slate-400">
+                  Sign up for direct developer updates, beta testing
+                  opportunities, and technical deep-dives delivered straight to
+                  your inbox.
+                </p>
+              </div>
+
+              <div class="space-y-4 pt-4 border-t border-slate-800">
+                <p class="text-sm font-medium text-slate-300">
+                  Studio Inquiries
+                </p>
+                <div class="space-y-3">
+                  <a
+                    href="mailto:info@northbyteinteractive.ca"
+                    class="flex items-center gap-3 text-slate-400 hover:text-violet-400 transition-colors"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8m10-7.5-6.5 6.5m0-6.5 6.5 6.5M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8"
+                      ></path>
+                    </svg>
+                    <span>info@northbyteinteractive.ca</span>
+                  </a>
+                  <a
+                    href="tel:+16045550404"
+                    class="flex items-center gap-3 text-slate-400 hover:text-violet-400 transition-colors"
+                  >
+                    <svg
+                      class="w-5 h-5"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                      ></path>
+                    </svg>
+                    <span>+1 604 555 0404</span>
+                  </a>
+                  <a
+                    href="https://maps.app.goo.gl/xXYFh8uVacPfMRAQ6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-start gap-3 text-slate-400 hover:text-violet-400 transition-colors"
+                  >
+                    <svg
+                      class="w-5 h-5 shrink-0 mt-0.5"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      ></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span
+                      >1075 West Georgia Street, Vancouver, BC V6E 3C9,
+                      Canada</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Real Form Box -->
+            <div
+              class="bg-slate-900 border border-slate-800 p-8 rounded-sm shadow-xl"
+            >
+              <form action="thanks_form.php" method="post" class="space-y-6">
+                <div class="space-y-2">
+                  <label
+                    for="fullName"
+                    class="block text-sm font-medium text-slate-300"
+                    >Callsign / Name</label
+                  >
+                  <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    required=""
+                    class="w-full bg-slate-950 border border-slate-800 rounded-sm px-4 py-3 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500 transition-colors"
+                    placeholder="Enter your designation"
+                  />
+                </div>
+
+                <div class="space-y-2">
+                  <label
+                    for="emailAddr"
+                    class="block text-sm font-medium text-slate-300"
+                    >Comms Link (Email)</label
+                  >
+                  <input
+                    type="email"
+                    id="emailAddr"
+                    name="emailAddr"
+                    required=""
+                    class="w-full bg-slate-950 border border-slate-800 rounded-sm px-4 py-3 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500 transition-colors"
+                    placeholder="info@northbyteinteractive.ca"
+                  />
+                </div>
+
+                <div class="space-y-2">
+                  <label
+                    for="platform"
+                    class="block text-sm font-medium text-slate-300"
+                    >Primary Hardware</label
+                  >
+                  <select
+                    id="platform"
+                    name="platform"
+                    class="w-full bg-slate-950 border border-slate-800 rounded-sm px-4 py-3 text-slate-100 focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500 transition-colors"
+                  >
+                    <option value="pc">PC / High-End Rig</option>
+                    <option value="laptop">Gaming Laptop</option>
+                    <option value="handheld">PC Handheld System</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="flex items-start gap-3 pt-2">
+                  <input
+                    type="checkbox"
+                    id="optIn"
+                    name="optIn"
+                    required=""
+                    class="mt-1 w-4 h-4 rounded-sm bg-slate-950 border-slate-800 text-violet-600 focus:ring-violet-500 focus:ring-offset-slate-900"
+                  />
+                  <label
+                    for="optIn"
+                    class="text-sm text-slate-400 leading-snug"
+                  >
+                    I verify clearance to receive transmission logs, patch
+                    updates, and early access protocols from NorthByte
+                    Interactive.
+                  </label>
+                </div>
+
+                <div class="form-privacy">
+                  <label class="privacy-label">
+                    <input type="checkbox" name="privacyAccepted" required="" />
+                    <span
+                      >I agree to the
+                      <a
+                        href="privacy-policy.html"
+                        target="_blank"
+                        rel="noopener"
+                        >Privacy Policy</a
+                      >.</span
+                    >
+                  </label>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full py-4 bg-violet-600 hover:bg-violet-500 text-white font-semibold rounded-sm transition-colors text-center tracking-wide"
+                >
+                  Initiate Link
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-chrome="footer" aria-label="Site Footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__brandCol">
+          <strong class="site-footer__brand">NorthByte Interactive</strong>
+          <p class="site-footer__summary">Crafting digital worlds.</p>
+        </div>
+        <div class="site-footer__contactCol">
+          <span class="site-footer__heading">Connect</span>
+          <div class="site-footer__contact">
+            <a class="site-footer__contactLink" href="tel:+16045550404"
+              >+1 604 555 0404</a
+            >
+            <a
+              class="site-footer__contactLink"
+              href="mailto:info@northbyteinteractive.ca"
+              >info@northbyteinteractive.ca</a
+            >
+            <a
+              class="site-footer__contactLink"
+              href="https://maps.app.goo.gl/xXYFh8uVacPfMRAQ6"
+              target="_blank"
+              rel="noopener"
+              >1075 West Georgia Street</a
+            >
+          </div>
+        </div>
+        <div class="site-footer__navCol">
+          <span class="site-footer__heading">Explore</span>
+          <div class="site-footer__links">
+            <a class="site-footer__link" href="index.html">Home</a>
+            <a class="site-footer__link" href="who-we-are.html">Who We Are</a>
+            <a class="site-footer__link" href="titles.html">Titles</a>
+            <a class="site-footer__link" href="dev-log.html">Dev Log</a>
+          </div>
+        </div>
+        <div class="site-footer__legalCol">
+          <span class="site-footer__heading">Legal</span>
+          <div class="site-footer__links">
+            <a class="site-footer__link" href="privacy-policy.html"
+              >Privacy Policy</a
+            >
+            <a class="site-footer__link" href="terms-conditions.html"
+              >Terms &amp; Conditions</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span class="site-footer__copy">© 2026 NorthByte Interactive</span>
+      </div>
+    </footer>
+  </body>
+</html>

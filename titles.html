@@ -1,0 +1,953 @@
+<!doctype html>
+<html data-page="titles.html" lang="en">
+  <head>
+    <link rel="stylesheet" href="assets/css/chrome.generated.css" />
+    <script defer="" src="assets/js/chrome.generated.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Titles | NorthByte Interactive</title>
+    <meta
+      name="description"
+      content="Explore the full catalog of PC and console titles from NorthByte Interactive. Discover our most played games and upcoming releases."
+    />
+    <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content="Titles | NorthByte Interactive" />
+    <meta
+      property="og:description"
+      content="Explore the full catalog of PC and console titles from NorthByte Interactive. Discover our most played games and upcoming releases."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/titles.html" />
+    <meta property="og:image" content="assets/img/hero_game_landscape.webp" />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <script defer="" src="assets/js/site.js"></script>
+    <meta name="twitter:image" content="assets/img/hero_game_landscape.webp" />
+  </head>
+  <body
+    class="bg-slate-950 text-slate-300 font-sans antialiased selection:bg-indigo-500/30 selection:text-white"
+  >
+    <header class="site-header" data-chrome="header">
+      <div class="site-header__container">
+        <a class="site-brand" href="index.html">
+          <svg
+            class="brand-logo"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <g transform="rotate(-3 12 12)">
+              <rect
+                x="6"
+                y="6"
+                width="5.2"
+                height="5.2"
+                rx="1.5"
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-width="1.1"
+              />
+              <rect
+                x="13"
+                y="6"
+                width="5.2"
+                height="5.2"
+                rx="1.5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.1"
+              />
+              <rect
+                x="6"
+                y="13"
+                width="5.2"
+                height="5.2"
+                rx="1.5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.1"
+              />
+              <rect
+                x="13"
+                y="13"
+                width="5.2"
+                height="5.2"
+                rx="1.5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.1"
+              />
+              <path
+                d="M16 6 L19 9"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.1"
+                stroke-linecap="square"
+                stroke-linejoin="miter"
+              />
+            </g>
+          </svg>
+          <span class="site-brand__text">NorthByte Interactive</span>
+        </a>
+        <nav class="site-nav site-nav--desktop" aria-label="Primary">
+          <a class="site-nav__link" href="index.html">Home</a>
+          <a class="site-nav__link" href="who-we-are.html">Who We Are</a>
+          <a
+            class="site-nav__link is-current"
+            href="titles.html"
+            aria-current="page"
+            >Titles</a
+          >
+          <a class="site-nav__link" href="dev-log.html">Dev Log</a>
+        </nav>
+        <div class="site-header__actions">
+          <a
+            class="site-header__cta site-header__cta--secondary"
+            href="who-we-are.html"
+            >Contact Us</a
+          >
+          <button
+            class="site-burger"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-mobile-nav"
+            data-burger=""
+          >
+            <span class="site-burger__line"></span>
+            <span class="site-burger__line"></span>
+            <span class="site-burger__line"></span>
+            <span class="site-srOnly">Menu</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <nav
+      class="site-mobileNav"
+      id="site-mobile-nav"
+      data-mobile-nav=""
+      hidden=""
+      aria-label="Mobile navigation"
+    >
+      <div class="site-mobileNav__panel">
+        <div class="site-mobileNav__top">
+          <span class="site-mobileNav__brand">NorthByte</span>
+          <button
+            class="site-mobileNav__close"
+            type="button"
+            aria-label="Close menu"
+            data-mobile-close=""
+          >
+            ×
+          </button>
+        </div>
+        <div class="site-mobileNav__links">
+          <a class="site-mobileNav__link" href="index.html">Home</a>
+          <a class="site-mobileNav__link" href="who-we-are.html">Who We Are</a>
+          <a
+            class="site-mobileNav__link is-current"
+            href="titles.html"
+            aria-current="page"
+            >Titles</a
+          >
+          <a class="site-mobileNav__link" href="dev-log.html">Dev Log</a>
+        </div>
+        <div class="site-mobileNav__ctaBlock">
+          <a class="site-mobileNav__cta" href="who-we-are.html">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- HERO SMALL -->
+      <section
+        id="hero"
+        class="relative border-b border-slate-800 bg-slate-950 overflow-hidden"
+      >
+        <div class="flex flex-col lg:flex-row">
+          <div
+            class="lg:w-5/12 p-8 lg:p-16 xl:p-24 flex flex-col justify-center order-2 lg:order-1 relative z-10 bg-slate-950"
+          >
+            <span
+              class="inline-flex items-center px-2.5 py-1 rounded-sm bg-indigo-500/10 text-indigo-400 text-xs font-bold uppercase tracking-wider mb-6 w-max border border-indigo-500/20"
+            >
+              Our Titles
+            </span>
+            <h1
+              class="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight"
+            >
+              Worlds Built to be Explored
+            </h1>
+            <p class="text-lg text-slate-400 mb-10 max-w-md">
+              Dive into our expansive catalog. From high-octane competitive
+              arenas to deep, narrative-driven single-player experiences.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a
+                href="#most-played"
+                class="inline-flex justify-center items-center px-8 py-3.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-sm font-medium transition-colors"
+              >
+                View Top Games
+              </a>
+              <a
+                href="#full-catalog"
+                class="inline-flex justify-center items-center px-8 py-3.5 bg-transparent border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white rounded-sm font-medium transition-colors"
+              >
+                Full Catalog
+              </a>
+            </div>
+          </div>
+          <div
+            class="lg:w-7/12 relative min-h-[40vh] lg:min-h-[70vh] order-1 lg:order-2"
+          >
+            <img
+              src="assets/img/hero_game_landscape.webp"
+              loading="lazy"
+              decoding="async"
+              alt="Immersive game landscape"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent lg:bg-gradient-to-l"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MOST PLAYED -->
+      <section
+        id="most-played"
+        class="py-16 lg:py-24 bg-slate-900 border-b border-slate-800"
+      >
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+          <div class="border-l-4 border-indigo-500 pl-6 mb-12">
+            <h2 class="text-3xl font-bold text-white">Active Servers</h2>
+            <p class="text-slate-400 mt-2">
+              Our highest population multiplayer titles right now.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div
+              class="md:col-span-2 relative h-[400px] rounded-sm overflow-hidden border border-slate-800 group"
+            >
+              <img
+                src="assets/img/game_multiplayer_action.webp"
+                loading="lazy"
+                decoding="async"
+                alt="Multiplayer game action"
+                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"
+              ></div>
+              <div class="absolute bottom-0 left-0 p-8 w-full">
+                <div class="flex justify-between items-end flex-wrap gap-4">
+                  <div>
+                    <span
+                      class="text-indigo-400 text-sm font-bold uppercase tracking-wider mb-2 block"
+                      >Competitive FPS</span
+                    >
+                    <h3 class="text-3xl font-bold text-white">Neon Protocol</h3>
+                  </div>
+                  <div
+                    class="bg-slate-950/80 backdrop-blur border border-slate-800 rounded-sm px-4 py-2"
+                  >
+                    <span
+                      class="block text-xs text-slate-400 uppercase tracking-wider"
+                      >Active Players</span
+                    >
+                    <span class="block text-xl font-bold text-white"
+                      >142,850</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="h-[400px] rounded-sm bg-slate-950 border border-slate-800 p-8 flex flex-col justify-between"
+            >
+              <div>
+                <span class="inline-block w-12 h-1 bg-indigo-500 mb-6"></span>
+                <h3 class="text-2xl font-bold text-white mb-4">
+                  Global Leaderboards
+                </h3>
+                <p class="text-slate-400">
+                  The competitive season is in full swing. Ranked matchmaking is
+                  active across all regions with new rewards available this
+                  quarter.
+                </p>
+              </div>
+              <ul class="space-y-4 border-t border-slate-800 pt-6">
+                <li class="flex justify-between items-center">
+                  <span class="text-slate-300">Daily Matches</span>
+                  <span class="text-white font-medium">1.2M+</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-slate-300">Server Uptime</span>
+                  <span class="text-white font-medium">99.9%</span>
+                </li>
+                <li class="flex justify-between items-center">
+                  <span class="text-slate-300">Registered Teams</span>
+                  <span class="text-white font-medium">45,000</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EARLY ACCESS FORM -->
+      <section
+        id="early-access"
+        class="py-16 lg:py-24 bg-slate-950 border-b border-slate-800"
+      >
+        <div
+          class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row gap-12 items-center"
+        >
+          <div class="lg:w-1/2 w-full">
+            <div
+              class="bg-slate-900 border border-slate-800 rounded-sm p-8 lg:p-12"
+            >
+              <span
+                class="text-indigo-400 text-sm font-bold uppercase tracking-wider mb-2 block"
+                >Closed Alpha</span
+              >
+              <h2 class="text-3xl font-bold text-white mb-4">
+                Test Our Next Release
+              </h2>
+              <p class="text-slate-400 mb-8">
+                Help shape the future of our upcoming tactical RPG. Register
+                your interest to secure a spot in the next testing phase.
+              </p>
+
+              <form action="thanks.html" method="post" class="space-y-4">
+                <div>
+                  <label
+                    for="player_email"
+                    class="block text-sm font-medium text-slate-300 mb-1"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    id="player_email"
+                    name="email"
+                    required=""
+                    class="w-full bg-slate-950 border border-slate-800 rounded-sm px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors"
+                    placeholder="info@northbyteinteractive.ca"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="hardware_spec"
+                    class="block text-sm font-medium text-slate-300 mb-1"
+                    >Primary Platform</label
+                  >
+                  <select
+                    id="hardware_spec"
+                    name="platform"
+                    class="w-full bg-slate-950 border border-slate-800 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors appearance-none"
+                  >
+                    <option value="pc">High-End PC</option>
+                    <option value="console">Current Gen Console</option>
+                    <option value="deck">Handheld PC</option>
+                  </select>
+                </div>
+                <div class="form-privacy">
+                  <label class="privacy-label">
+                    <input type="checkbox" name="privacyAccepted" required="" />
+                    <span
+                      >I agree to the
+                      <a
+                        href="privacy-policy.html"
+                        target="_blank"
+                        rel="noopener"
+                        >Privacy Policy</a
+                      >.</span
+                    >
+                  </label>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3.5 rounded-sm transition-colors mt-4"
+                >
+                  Request Access
+                </button>
+              </form>
+            </div>
+          </div>
+          <div
+            class="lg:w-1/2 w-full relative h-[400px] lg:h-[600px] rounded-sm overflow-hidden border border-slate-800"
+          >
+            <img
+              src="assets/img/game_concept_art.webp"
+              loading="lazy"
+              decoding="async"
+              alt="Early access concept art"
+              class="absolute inset-0 w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- BY PLATFORM -->
+      <section
+        id="by-platform"
+        class="py-16 lg:py-24 bg-slate-900 border-b border-slate-800"
+      >
+        <div
+          class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row gap-12"
+        >
+          <div class="lg:w-1/3">
+            <div class="sticky top-24">
+              <h2 class="text-3xl font-bold text-white mb-4">
+                Target Hardware
+              </h2>
+              <p class="text-slate-400 mb-6">
+                Our proprietary engine scales across multiple hardware profiles,
+                ensuring optimal performance wherever you play.
+              </p>
+              <a
+                href="#full-catalog"
+                class="text-indigo-400 hover:text-indigo-300 font-medium inline-flex items-center gap-2 transition-colors"
+              >
+                Browse all titles
+                <svg
+                  class="w-4 h-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="lg:w-2/3 flex flex-col gap-4">
+            <article
+              class="bg-slate-950 border border-slate-800 rounded-sm p-6 sm:p-8 flex flex-col sm:flex-row gap-6 items-start sm:items-center hover:border-slate-600 transition-colors"
+            >
+              <div
+                class="w-12 h-12 rounded-sm bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0 border border-indigo-500/20"
+              >
+                <svg
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl font-bold text-white mb-1">Desktop PC</h3>
+                <p class="text-slate-400 text-sm">
+                  Uncapped frame rates, ultrawide support, and extensive
+                  graphics options for enthusiast rigs.
+                </p>
+              </div>
+              <span
+                class="px-3 py-1 bg-slate-900 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 shrink-0"
+              >
+                Primary
+              </span>
+            </article>
+
+            <article
+              class="bg-slate-950 border border-slate-800 rounded-sm p-6 sm:p-8 flex flex-col sm:flex-row gap-6 items-start sm:items-center hover:border-slate-600 transition-colors"
+            >
+              <div
+                class="w-12 h-12 rounded-sm bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0 border border-indigo-500/20"
+              >
+                <svg
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="6" width="20" height="12" rx="2" ry="2"></rect>
+                  <path d="M6 12h4M8 10v4M15 13h.01M18 11h.01"></path>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl font-bold text-white mb-1">
+                  Console Systems
+                </h3>
+                <p class="text-slate-400 text-sm">
+                  Optimized for stable 60FPS performance targets with dynamic
+                  resolution scaling.
+                </p>
+              </div>
+              <span
+                class="px-3 py-1 bg-slate-900 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 shrink-0"
+              >
+                Supported
+              </span>
+            </article>
+
+            <article
+              class="bg-slate-950 border border-slate-800 rounded-sm p-6 sm:p-8 flex flex-col sm:flex-row gap-6 items-start sm:items-center hover:border-slate-600 transition-colors"
+            >
+              <div
+                class="w-12 h-12 rounded-sm bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0 border border-indigo-500/20"
+              >
+                <svg
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <h3 class="text-xl font-bold text-white mb-1">
+                  Handheld Devices
+                </h3>
+                <p class="text-slate-400 text-sm">
+                  Verified compatibility profiles with tailored UI scaling and
+                  battery-saving presets.
+                </p>
+              </div>
+              <span
+                class="px-3 py-1 bg-slate-900 border border-slate-800 rounded-sm text-xs font-medium text-slate-300 shrink-0"
+              >
+                Verified
+              </span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FULL CATALOG -->
+      <section
+        id="full-catalog"
+        class="py-16 lg:py-24 bg-slate-950 border-b border-slate-800"
+      >
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+          <div class="text-center mb-16 max-w-2xl mx-auto">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">
+              The Catalog
+            </h2>
+            <p class="text-slate-400">
+              A complete archive of our published works, spanning multiple
+              genres and generations.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            <!-- Card 1 -->
+            <article
+              class="bg-slate-900 border border-slate-800 rounded-sm overflow-hidden flex flex-col"
+            >
+              <div class="h-64 relative">
+                <img
+                  src="assets/img/game_rpg_cover.webp"
+                  loading="lazy"
+                  decoding="async"
+                  alt="RPG Game Cover"
+                  class="absolute inset-0 w-full h-full object-cover"
+                />
+                <div
+                  class="absolute top-4 right-4 bg-slate-950/80 backdrop-blur px-3 py-1 rounded-sm border border-slate-800 text-xs font-bold text-white uppercase"
+                >
+                  RPG
+                </div>
+              </div>
+              <div class="p-8 flex flex-col flex-1">
+                <h3 class="text-2xl font-bold text-white mb-2">Shadow Core</h3>
+                <p class="text-slate-400 mb-6 flex-1">
+                  An isometric action RPG set in a crumbling sci-fi megacity.
+                  Customize your augmentations and survive the syndicate wars.
+                </p>
+                <div class="flex gap-2">
+                  <span
+                    class="px-2 py-1 bg-slate-950 border border-slate-800 rounded-sm text-xs text-slate-300"
+                    >Single-Player</span
+                  >
+                  <span
+                    class="px-2 py-1 bg-slate-950 border border-slate-800 rounded-sm text-xs text-slate-300"
+                    >Controller Support</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 (Staggered slightly on desktop) -->
+            <article
+              class="bg-slate-900 border border-slate-800 rounded-sm overflow-hidden flex flex-col md:mt-12"
+            >
+              <div class="h-64 relative">
+                <img
+                  src="assets/img/game_space_sim.webp"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Space Sim Cover"
+                  class="absolute inset-0 w-full h-full object-cover"
+                />
+                <div
+                  class="absolute top-4 right-4 bg-slate-950/80 backdrop-blur px-3 py-1 rounded-sm border border-slate-800 text-xs font-bold text-white uppercase"
+                >
+                  Simulation
+                </div>
+              </div>
+              <div class="p-8 flex flex-col flex-1">
+                <h3 class="text-2xl font-bold text-white mb-2">Void Strider</h3>
+                <p class="text-slate-400 mb-6 flex-1">
+                  Command a deep-space salvage vessel. Manage your crew, upgrade
+                  your ship, and navigate treacherous asteroid fields.
+                </p>
+                <div class="flex gap-2">
+                  <span
+                    class="px-2 py-1 bg-slate-950 border border-slate-800 rounded-sm text-xs text-slate-300"
+                    >Co-op</span
+                  >
+                  <span
+                    class="px-2 py-1 bg-slate-950 border border-slate-800 rounded-sm text-xs text-slate-300"
+                    >VR Supported</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article
+              class="bg-slate-900 border border-slate-800 rounded-sm overflow-hidden flex flex-col"
+            >
+              <div class="h-64 relative">
+                <img
+                  src="assets/img/game_survival_horror.webp"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Survival Horror Cover"
+                  class="absolute inset-0 w-full h-full object-cover"
+                />
+                <div
+                  class="absolute top-4 right-4 bg-slate-950/80 backdrop-blur px-3 py-1 rounded-sm border border-slate-800 text-xs font-bold text-white uppercase"
+                >
+                  Horror
+                </div>
+              </div>
+              <div class="p-8 flex flex-col flex-1">
+                <h3 class="text-2xl font-bold text-white mb-2">
+                  Rust &amp; Ruin
+                </h3>
+                <p class="text-slate-400 mb-6 flex-1">
+                  Resource management meets psychological horror. Scavenge for
+                  supplies during the day, defend your bunker at night.
+                </p>
+                <div class="flex gap-2">
+                  <span
+                    class="px-2 py-1 bg-slate-950 border border-slate-800 rounded-sm text-xs text-slate-300"
+                    >Single-Player</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 4 (Staggered) -->
+            <article
+              class="bg-slate-900 border border-slate-800 rounded-sm overflow-hidden flex flex-col md:mt-12"
+            >
+              <div class="h-64 relative">
+                <img
+                  src="assets/img/game_platformer.webp"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Platformer Cover"
+                  class="absolute inset-0 w-full h-full object-cover"
+                />
+                <div
+                  class="absolute top-4 right-4 bg-slate-950/80 backdrop-blur px-3 py-1 rounded-sm border border-slate-800 text-xs font-bold text-white uppercase"
+                >
+                  Platformer
+                </div>
+              </div>
+              <div class="p-8 flex flex-col flex-1">
+                <h3 class="text-2xl font-bold text-white mb-2">Aether Surge</h3>
+                <p class="text-slate-400 mb-6 flex-1">
+                  A fast-paced precision platformer with gravity-defying
+                  mechanics and a pulsing synthwave soundtrack.
+                </p>
+                <div class="flex gap-2">
+                  <span
+                    class="px-2 py-1 bg-slate-950 border border-slate-800 rounded-sm text-xs text-slate-300"
+                    >Speedrun Mode</span
+                  >
+                  <span
+                    class="px-2 py-1 bg-slate-950 border border-slate-800 rounded-sm text-xs text-slate-300"
+                    >Achievements</span
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- LEGACY TITLES -->
+      <section
+        id="legacy-titles"
+        class="py-16 lg:py-24 bg-slate-900 border-b border-slate-800"
+      >
+        <div class="max-w-4xl mx-auto px-6 lg:px-12">
+          <h2 class="text-3xl font-bold text-white mb-12 text-center">
+            The Vault
+          </h2>
+          <div
+            class="border-l-2 border-slate-800 ml-4 lg:ml-8 pl-8 lg:pl-12 space-y-12 relative"
+          >
+            <!-- Timeline Item 1 -->
+            <div class="relative">
+              <div
+                class="absolute -left-[41px] lg:-left-[57px] top-1.5 w-4 h-4 bg-slate-900 border-2 border-indigo-500 rounded-full"
+              ></div>
+              <span
+                class="text-indigo-400 font-bold text-sm tracking-wider mb-2 block"
+                >2018</span
+              >
+              <h3 class="text-xl font-bold text-white mb-2">First Dawn</h3>
+              <p class="text-slate-400">
+                Our debut title. A gritty tactical shooter that established our
+                reputation for demanding, skill-based gameplay mechanics.
+              </p>
+            </div>
+            <!-- Timeline Item 2 -->
+            <div class="relative">
+              <div
+                class="absolute -left-[41px] lg:-left-[57px] top-1.5 w-4 h-4 bg-slate-900 border-2 border-slate-600 rounded-full"
+              ></div>
+              <span
+                class="text-slate-500 font-bold text-sm tracking-wider mb-2 block"
+                >2021</span
+              >
+              <h3 class="text-xl font-bold text-white mb-2">Sector 7</h3>
+              <p class="text-slate-400">
+                An experimental narrative experience blending puzzle-solving
+                with atmospheric exploration. Critically acclaimed for its
+                distinct visual style.
+              </p>
+            </div>
+            <!-- Timeline Item 3 -->
+            <div class="relative">
+              <div
+                class="absolute -left-[41px] lg:-left-[57px] top-1.5 w-4 h-4 bg-slate-900 border-2 border-slate-600 rounded-full"
+              ></div>
+              <span
+                class="text-slate-500 font-bold text-sm tracking-wider mb-2 block"
+                >2023</span
+              >
+              <h3 class="text-xl font-bold text-white mb-2">
+                Neon Protocol (Original Release)
+              </h3>
+              <p class="text-slate-400">
+                The launch version of our current flagship title, before the
+                massive engine overhaul and transition to free-to-play
+                mechanics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOUNDTRACKS -->
+      <section
+        id="soundtracks"
+        class="py-16 lg:py-24 bg-slate-950 border-b border-slate-800"
+      >
+        <div
+          class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center gap-12"
+        >
+          <div
+            class="md:w-1/2 w-full order-2 md:order-1 grid grid-cols-2 gap-4"
+          >
+            <img
+              src="assets/img/music_album_cover_1.webp"
+              loading="lazy"
+              decoding="async"
+              alt="Soundtrack Cover 1"
+              class="w-full aspect-square object-cover rounded-sm border border-slate-800"
+            />
+            <img
+              src="assets/img/music_album_cover_2.webp"
+              loading="lazy"
+              decoding="async"
+              alt="Soundtrack Cover 2"
+              class="w-full aspect-square object-cover rounded-sm border border-slate-800 mt-8"
+            />
+          </div>
+          <div class="md:w-1/2 w-full order-1 md:order-2">
+            <div class="border-l-4 border-indigo-500 pl-6 mb-6">
+              <h2 class="text-3xl font-bold text-white">Original Scores</h2>
+            </div>
+            <p class="text-slate-400 mb-8">
+              Music is core to our atmosphere. Our award-winning internal audio
+              team produces distinct, memorable soundscapes that define each
+              world.
+            </p>
+            <div class="bg-slate-900 border border-slate-800 rounded-sm p-6">
+              <h3 class="text-white font-medium mb-4">Now Streaming</h3>
+              <ul class="space-y-3">
+                <li class="flex items-center justify-between text-sm">
+                  <span class="text-slate-300">Neon Protocol: Vol 1</span>
+                  <span class="text-slate-500">42 min</span>
+                </li>
+                <li class="flex items-center justify-between text-sm">
+                  <span class="text-slate-300">Shadow Core OST</span>
+                  <span class="text-slate-500">1h 15min</span>
+                </li>
+                <li class="flex items-center justify-between text-sm">
+                  <span class="text-slate-300">Void Strider Ambience</span>
+                  <span class="text-slate-500">58 min</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INQUIRIES & CONTACT DATA -->
+      <section id="inquiries" class="py-16 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+          <h2 class="text-2xl font-bold text-white mb-8">
+            Business &amp; Press Inquiries
+          </h2>
+          <div
+            class="flex flex-col sm:flex-row justify-center items-center gap-6 lg:gap-12"
+          >
+            <a
+              href="mailto:info@northbyteinteractive.ca"
+              class="flex items-center gap-3 text-slate-400 hover:text-white transition-colors"
+            >
+              <svg
+                class="w-5 h-5 text-indigo-400"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <span class="font-medium">info@northbyteinteractive.ca</span>
+            </a>
+            <a
+              href="tel:+16045550404"
+              class="flex items-center gap-3 text-slate-400 hover:text-white transition-colors"
+            >
+              <svg
+                class="w-5 h-5 text-indigo-400"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+              <span class="font-medium">+1 604 555 0404</span>
+            </a>
+            <a
+              href="https://maps.app.goo.gl/xXYFh8uVacPfMRAQ6"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center gap-3 text-slate-400 hover:text-white transition-colors"
+            >
+              <svg
+                class="w-5 h-5 text-indigo-400"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span class="font-medium"
+                >1075 West Georgia Street, Vancouver, BC V6E 3C9, Canada</span
+              >
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" data-chrome="footer" aria-label="Site Footer">
+      <div class="site-footer__inner">
+        <div class="site-footer__brandCol">
+          <strong class="site-footer__brand">NorthByte Interactive</strong>
+          <p class="site-footer__summary">Crafting digital worlds.</p>
+        </div>
+        <div class="site-footer__contactCol">
+          <span class="site-footer__heading">Connect</span>
+          <div class="site-footer__contact">
+            <a class="site-footer__contactLink" href="tel:+16045550404"
+              >+1 604 555 0404</a
+            >
+            <a
+              class="site-footer__contactLink"
+              href="mailto:info@northbyteinteractive.ca"
+              >info@northbyteinteractive.ca</a
+            >
+            <a
+              class="site-footer__contactLink"
+              href="https://maps.app.goo.gl/xXYFh8uVacPfMRAQ6"
+              target="_blank"
+              rel="noopener"
+              >1075 West Georgia Street</a
+            >
+          </div>
+        </div>
+        <div class="site-footer__navCol">
+          <span class="site-footer__heading">Explore</span>
+          <div class="site-footer__links">
+            <a class="site-footer__link" href="index.html">Home</a>
+            <a class="site-footer__link" href="who-we-are.html">Who We Are</a>
+            <a class="site-footer__link" href="titles.html">Titles</a>
+            <a class="site-footer__link" href="dev-log.html">Dev Log</a>
+          </div>
+        </div>
+        <div class="site-footer__legalCol">
+          <span class="site-footer__heading">Legal</span>
+          <div class="site-footer__links">
+            <a class="site-footer__link" href="privacy-policy.html"
+              >Privacy Policy</a
+            >
+            <a class="site-footer__link" href="terms-conditions.html"
+              >Terms &amp; Conditions</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span class="site-footer__copy">© 2026 NorthByte Interactive</span>
+      </div>
+    </footer>
+  </body>
+</html>
